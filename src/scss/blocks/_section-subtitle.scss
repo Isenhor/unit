@@ -4,4 +4,19 @@
   font-size: 48px;
   font-weight: 700;
   line-height: 1;
+
+  /*Tablet*/
+  @include tablet {
+    font-size: 38px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    font-size: 30px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    font-size: 26px;
+  }
 }

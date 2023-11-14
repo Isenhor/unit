@@ -6,4 +6,9 @@
   line-height: 1;
   letter-spacing: 4px;
   text-transform: uppercase;
+
+  /*Mobile*/
+  @include mobile {
+    font-size: 14px;
+  }
 }
