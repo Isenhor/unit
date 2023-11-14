@@ -1,0 +1,24 @@
+header.header
+	.header__content 
+		.header__nav.container.flex
+			.button-menu
+				button.burger.nav-btn(type='button')
+					span.burger-bar
+			.button-search
+				button.nav-btn
+					svg.svg-search
+						use(href="./img/spriteSvg.svg#svg-search")
+		.header__info.container
+			.header__title
+				h1.heading-1 ЮНИТ
+			.header__descr
+				p Управляй задачами и проектами из любой точки вместе с ЮНИТ. 
+				| Дома. На работе. В дороге. Онлайн. Оффлайн.
+			.header__form
+				form(action="#").header-form.flex
+					input(type="text" placeholder="Ваше имя").header-form__input 
+					input(type="email" placeholder="Email").header-form__input
+					button(type="submit").button начать триал 
+		.header__scroll
+			svg.svg-mouse
+				use(href="./img/spriteSvg.svg#svg-mouse")

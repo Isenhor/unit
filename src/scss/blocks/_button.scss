@@ -1,0 +1,31 @@
+.button {
+  padding: 0 40px;
+  height: 60px;
+  border-radius: 30px;
+  background: #00c470;
+
+  font-family: $main;
+  color: $light-text;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $accent-text;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  /*Mobile*/
+  @include mobile {
+    width: 370px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    width: 290px;
+  }
+}

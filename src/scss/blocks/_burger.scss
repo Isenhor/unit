@@ -1,0 +1,64 @@
+$width: 40px;
+$height: 25px;
+$barWidth: 20px;
+$barHeight: 3px;
+$barColor: #000;
+
+.burger {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $height;
+  cursor: pointer;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.burger-bar {
+  position: relative;
+  width: $barWidth;
+  height: $barHeight;
+  background-color: $barColor;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: $barWidth;
+    height: $barHeight;
+    background-color: $barColor;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  &::before {
+    top: -7px;
+  }
+
+  &::after {
+    top: 7px;
+  }
+}
+
+.burger.burger--active {
+  & > .burger-bar {
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      transform: rotate(-135deg);
+      background-color: $barColor;
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(135deg);
+      background-color: $barColor;
+    }
+  }
+}

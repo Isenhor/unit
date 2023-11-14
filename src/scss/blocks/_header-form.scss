@@ -1,0 +1,38 @@
+.header-form {
+  justify-content: center;
+  gap: 20px;
+
+  &__input {
+    padding: 0 30px;
+    width: 240px;
+    height: 60px;
+
+    background-color: $input-bgc;
+    font-family: $main;
+    color: $light-text;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 60px;
+    border-radius: 30px;
+    &::placeholder {
+      color: $light-text;
+    }
+
+    /*Mobile*/
+    @include mobile {
+      width: 370px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      width: 290px;
+    }
+  }
+
+  /*Mobile*/
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
