@@ -18,7 +18,9 @@
     color: $accent-text;
     background-color: rgba(0, 0, 0, 0.75);
   }
+}
 
+.button--header-form {
   /*Mobile*/
   @include mobile {
     width: 370px;
