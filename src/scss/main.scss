@@ -3,9 +3,13 @@
 
 //sections
 @import "sections/header";
+@import "sections/functional";
 
 // blocks
 @import "blocks/burger";
 @import "blocks/nav-btn";
 @import "blocks/button";
 @import "blocks/header-form";
+@import "blocks/section-title";
+@import "blocks/section-subtitle";
+@import "blocks/card";

@@ -1,0 +1,63 @@
+.card {
+  width: 270px;
+  text-align: center;
+
+  &__img {
+    margin-bottom: 40px;
+    width: 64px;
+    height: 64px;
+
+    /*Tablet*/
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $dark-text;
+    font-family: $main;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+
+    /*Tablet*/
+    @include tablet {
+      margin-bottom: 10px;
+      min-height: 48px;
+    }
+
+    /*Mobile*/
+    @include mobile {
+      min-height: unset;
+    }
+  }
+
+  &__desc {
+    color: $card-desc-text;
+    font-family: $main;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14;
+
+    /*Tablet*/
+    @include tablet {
+      line-height: 1.57;
+    }
+  }
+
+  /*Tablet*/
+  @include tablet {
+    width: 195px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    width: 270px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    width: 290px;
+  }
+}

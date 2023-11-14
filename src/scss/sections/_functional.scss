@@ -1,0 +1,59 @@
+.functional {
+  padding: 80px 0;
+  background-color: $section-bg;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 70px;
+
+    /*Tablet*/
+    @include tablet {
+      margin-bottom: 60px;
+    }
+
+    /*Mobile*/
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    /*Tablet*/
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    /*Mobile*/
+    @include mobile {
+      margin-bottom: 20px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__row {
+    flex-wrap: wrap;
+    gap: 30px;
+
+    /*Mobile*/
+    @include mobile {
+      justify-content: center;
+	  gap: 40px 30px;
+    }
+  }
+
+  /*Tablet*/
+  @include tablet {
+    padding: 50px 0;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    padding: 40px 0;
+  }
+}
