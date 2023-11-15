@@ -1,0 +1,87 @@
+.footer {
+  padding: 70px 0;
+  color: $light-text;
+  background-color: $footer-bgc;
+  font-family: $main;
+
+  &__row {
+    padding: 0;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    /*Tablet*/
+    @include tablet {
+      margin-bottom: 40px;
+    }
+
+    /*Mobile*/
+    @include mobile {
+      margin-bottom: 30px;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      margin-bottom: 40px;
+      gap: 40px;
+    }
+  }
+
+  &__social {
+    gap: 30px;
+  }
+
+  &__copy {
+    text-align: center;
+    color: $footer-copy;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+
+    & span {
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    /*Mobile XS*/
+    @include mobile-s {
+      line-height: 1.5;
+    }
+  }
+
+  /*Tablet*/
+  @include tablet {
+    padding: 60px 0;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    padding: 50px 0;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    padding: 40px 0;
+  }
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(196, 196, 196, 0.1);
+  border-radius: 50%;
+
+  transition: background-color 0.3s ease-in-out;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: #00c470;
+  }
+}

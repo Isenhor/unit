@@ -44,6 +44,10 @@ body {
   height: 100vh;
 }
 
+a {
+  color: inherit;
+}
+
 a,
 a:hover {
   text-decoration: none;
@@ -143,4 +147,9 @@ input[type="submit"] {
 .svg-mouse {
   width: 32px;
   height: 48px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
 }
