@@ -11,4 +11,8 @@
   @include mobile {
     font-size: 14px;
   }
+
+  &--light {
+    color: $light-text;
+  }
 }
