@@ -1,0 +1,28 @@
+.button-outline {
+  padding: 0 40px;
+  height: 60px;
+
+  color: $light-text;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  &:hover,
+  &:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}

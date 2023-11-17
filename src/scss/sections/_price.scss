@@ -16,6 +16,22 @@
     height: 100%;
     background-color: $overlay;
   }
+
+  /*Tablet*/
+  @include tablet {
+    padding: 50px 0;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    padding: 40px 0;
+  }
 }
 
 .price__content {
@@ -26,9 +42,39 @@
 .price__header {
   margin-bottom: 80px;
   text-align: center;
+
+  /*Tablet*/
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    margin-bottom: 40px;
+  }
 }
 
 .price__title {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
+
+  /*Tablet*/
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    margin-bottom: 10px;
+  }
 }
 
+.price__row {
+  justify-content: center;
+  gap: 30px;
+
+  /*Mobile*/
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
