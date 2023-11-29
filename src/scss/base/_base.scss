@@ -37,6 +37,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .noscroll {
   overflow: hidden;
   -ms-touch-action: none;

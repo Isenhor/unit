@@ -1,0 +1,10 @@
+.menu {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1; 
+}
+
+.menu__item + .menu__item {
+  margin-top: 40px;
+}

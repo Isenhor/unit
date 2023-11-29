@@ -3,6 +3,8 @@ $height: 25px;
 $barWidth: 20px;
 $barHeight: 3px;
 $barColor: #000;
+$lineMargin: 4px;
+$radius: 2px;
 
 .burger {
   position: relative;
@@ -24,6 +26,7 @@ $barColor: #000;
   width: $barWidth;
   height: $barHeight;
   background-color: $barColor;
+  border-radius: $radius;
 
   &::before,
   &::after {
@@ -34,14 +37,15 @@ $barColor: #000;
     background-color: $barColor;
     left: 0;
     transition: 0.3s;
+    border-radius: $radius;
   }
 
   &::before {
-    top: -7px;
+    top: -($barHeight + $lineMargin);
   }
 
   &::after {
-    top: 7px;
+    top: $barHeight + $lineMargin;
   }
 }
 
