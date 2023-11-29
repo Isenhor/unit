@@ -16,12 +16,29 @@
     top: 53px;
     left: -46px;
     transform: translateX(-100%);
+
+    /*Tablet*/
+    @include tablet {
+    }
   }
+
   &--right {
     position: absolute;
     top: 53px;
     right: -46px;
     transform: translateX(100%);
+
+    /*Tablet*/
+    @include tablet {
+    }
+  }
+
+  &--left,
+  &--right {
+    /*Mobile XS*/
+    @include mobile-s {
+      display: none;
+    }
   }
 }
 
@@ -37,6 +54,21 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 2;
+
+  /*Tablet*/
+  @include tablet {
+    line-height: 1.5;
+  }
+
+  /*Mobile*/
+  @include mobile {
+    font-size: 16px;
+  }
+
+  /*Mobile XS*/
+  @include mobile-s {
+    font-size: 14px;
+  }
 }
 
 .slider-item__author {
